@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZeroBlog</title>
+  <meta name="color-scheme" content="dark">
+  <link rel="stylesheet" href="/css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' cdn.jsdelivr.net;
+    style-src 'self' fonts.googleapis.com cdn.jsdelivr.net 'unsafe-inline';
+    font-src 'self' fonts.gstatic.com cdn.jsdelivr.net;
+    img-src 'self' https:;
+    connect-src 'self';
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+    frame-src https://www.youtube.com https://player.vimeo.com;
+  ">
+</head>
+<body>
+  <header id="header"></header>
+  <zero-md id="mdLoad"></zero-md>
+  <footer id="footer"></footer>
+  <script type="module" src="/js/index.js"></script>
+</body>
+</html>

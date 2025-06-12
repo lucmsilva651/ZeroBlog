@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif&family=Space+Mono&display=swap");
+
+* {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "Roboto Serif", serif;
+  font-smooth: always;
+}
+
+body {
+  background-color: #10151d;
+  padding: 2rem 8rem;
+  margin: 0;
+}
+
+header,
+footer,
+header nav ul {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+header *,
+footer * {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  flex-direction: column;
+  padding: 0 0 2rem 0;
+  gap: 1rem;
+}
+
+header p:first-child {
+  font-family: "Space Mono", monospace;
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+header nav ul {
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 2rem;
+}
+
+header nav ul li {
+  font-size: 1.1rem;
+}
+
+header nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #3498db;
+}
+
+.markdown-body {
+  border: 1px solid #2c3e50;
+  border-radius: 6px;
+  padding: 25px 30px;
+}
+
+.markdown-body pre code *,
+.markdown-body code,
+.markdown-body samp,
+.markdown-body tt,
+pre code.hljs {
+  font-family: "Space Mono", monospace !important;
+}
+
+footer {
+  padding: 2rem 0 0 0;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 2rem 6rem;
+  }
+
+  header {
+    padding: 0 0 1rem 0;
+    gap: .5rem;
+  }
+
+  footer {
+    padding: 1rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  body {
+    padding: 2rem 4rem;
+  }
+
+  header p:first-child {
+    font-size: 2.3rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 1.5rem 2rem;
+  }
+
+  header {
+    gap: .75rem;
+  }
+
+  header p:first-child {
+    font-size: 1.8rem;
+  }
+
+  header nav ul li {
+    font-size: .8rem;
+  }
+
+  footer {
+    font-size: .8rem;
+  }
+}
